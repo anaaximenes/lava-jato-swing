@@ -45,7 +45,7 @@ O sistema atende à rotina operacional de um lava-jato: o atendente realiza o ca
 
 O código foi estruturado aplicando separação de responsabilidades para manter a camada visual desacoplada das regras e da persistência:
 
-```text
+
 src/
 └── lavaJato/
     ├── Veiculo.java          # Modelo de dados (dados do cliente e veículo)
@@ -53,7 +53,12 @@ src/
     ├── HistoricoService.java # Serviço responsável pela lógica de I/O e log diário
     ├── LavaJato.java         # Controlador da interface e tratamento de eventos
     └── LavaJato.form         # Layout visual das telas (IntelliJ GUI Designer)
-🧠 Conceitos e Práticas Aplicadas
+    
+
+
+---
+
+## 🧠 Conceitos e Práticas Aplicadas
 Separação de Responsabilidades: A camada gráfica (LavaJato.java) não grava arquivos diretamente nem calcula preços com valores fixos perdidos no código; ela delega a gravação para HistoricoService e consulta os valores em Servico.
 
 Uso de Enums: Centralização da tabela de preços e nomes de serviços no enum Servico, eliminando números mágicos (magic numbers) e facilitando reajustes de preços no futuro.
@@ -62,7 +67,9 @@ Manipulação de Arquivos e Streams (java.nio): Utilização de Files.lines() pa
 
 Tratamento de Exceções: Captura e tratamento de IOException com alertas visuais amigáveis via JOptionPane.
 
-⚙️ Como Executar o Projeto
+---
+
+## ⚙️ Como Executar o Projeto
 Pré-requisitos
 Java JDK (versão 17 ou superior) instalado.
 
@@ -87,6 +94,8 @@ Clique com o botão direito e selecione Run 'LavaJato.main()'.
 
 ⚠️ Atenção: Como o layout visual foi desenhado com o GUI Designer do IntelliJ (.form), a execução via linha de comando pura (javac/java) pode exigir compilação prévia das classes de formulário pelo plugin do Swing. A execução pela IDE é a mais recomendada.
 
+--- 
+
 ## 💻 Exemplo de Uso e Saída
 Trecho do log diário gerado (historico 2026-09-28.txt):
 Plaintext
@@ -105,7 +114,10 @@ Veículo: XYZ9876 | Corolla - Maria Souza
 Serviços: Polimento: R$ 150,00
 Pagamento: Pix
 Total: R$ 150,00
-🔧 Melhorias Futuras
+
+---
+
+## 🔧 Melhorias Futuras
 [ ] Validação visual de campos vazios antes de registrar o veículo.
 
 [ ] Implementação de máscaras de entrada (ex: placa no formato Mercosul e telefone).
@@ -116,7 +128,8 @@ Total: R$ 150,00
 
 [ ] Testes unitários com JUnit para as classes Servico e HistoricoService.
 
-👩‍💻 Autora
+## 👩‍💻 Autora
 Desenvolvido por Ana Beatriz Ximenes Amaral
 
 GitHub: @anaaximenes
+Linkedin: https://www.linkedin.com/in/ana-beatriz-ximenes-amaral-101323247/
