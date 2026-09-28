@@ -1,0 +1,21 @@
+==================================================================
+          RELÁTORIOS DIARIOS DE ATENDIMENTO -2026-09-09
+==================================================================
+___________________________________________________________________
+ATENDIMENTO #1| Hora: 15:45:48
+Veículo: 1234 | adb - ana
+Serviços: Lava Completo: R$ 80,00 | ,Polimeto: R$ 150,00 | 
+Pagamento: Dinheiro
+Total: R$ 230,00
+___________________________________________________________________
+ATENDIMENTO #2| Hora: 15:45:52
+Veículo: 1234 | adb - ana
+Serviços: Lava Completo: R$ 80,00 | ,Polimeto: R$ 150,00 | 
+Pagamento: Dinheiro
+Total: R$ 230,00
+___________________________________________________________________
+ATENDIMENTO #3| Hora: 15:50:00
+Veículo: GDB1234 | ETIOS - Ana Beatri
+Serviços: Higenização Interna: R$90,00 | 
+Pagamento: Dinheiro
+Total: R$ 90,00
